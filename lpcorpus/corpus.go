@@ -11,6 +11,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -18,9 +19,17 @@ import (
 	"time"
 )
 
-type Inputs struct {
-	Encode map[string]*EncodeInput `json:"encode"`
-	Decode map[string]*DecodeInput `json:"decode"`
+// ReadCorpusJSON reads the corpus.json file named by file.
+func ReadCorpusJSON(file string) (*Corpus, error) {
+	data, err := ioutil.ReadFile(file)
+	if err != nil {
+		return nil, err
+	}
+	var r Corpus
+	if err := json.Unmarshal(data, &r); err != nil {
+		return nil, err
+	}
+	return &r, nil
 }
 
 // ReadCorpus reads the corpus from the given directory.
@@ -30,6 +39,11 @@ func ReadCorpus(dir string) (*Corpus, error) {
 		return nil, err
 	}
 	return &r, nil
+}
+
+type Inputs struct {
+	Encode map[string]*EncodeInput `json:"encode"`
+	Decode map[string]*DecodeInput `json:"decode"`
 }
 
 // ReadInputs reads all the inputs from the given directory.

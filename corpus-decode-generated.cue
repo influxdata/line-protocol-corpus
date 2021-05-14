@@ -265,7 +265,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"00c421401aac02218abc2ce539791dfa": {
 		input: {
@@ -362,7 +362,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:27: empty tag name"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xf4\\xe2\\xfe\\xcd\\xf4\\xf3\\xcd\\xf4\\xf3U\\xa3\\xe2\\xfe\\xcd\\xf4\\xe2\\xfe\\xcd\\xf4\\xf3\\xcd\\xf4\\xf3=0(\""
 	}
 	"012547242ed34b5a1f4d8146c14a5557": {
 		input: {
@@ -843,7 +843,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:5: cannot parse value for field key \"\\x80\": invalid float value syntax"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"03587a8601548738fc042dd58b543b18": {
 		input: {
@@ -1028,7 +1028,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"03cb61144c5d18c16ca105d3628fff10": {
 		input: {
@@ -1077,7 +1077,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:5: invalid utf-8 sequence in token \"\\\"\\v\\x86\""
 	}
 	"041a795c367d65d016a8d2292fda65e5": {
 		input: {
@@ -1222,7 +1222,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"04d49b75135445160c622c4ef9163232": {
 		input: {
@@ -1240,7 +1240,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x9c\""
 	}
 	"04e6fb67aff6fb2b78c4bd8d102a0346": {
 		input: {
@@ -1249,7 +1249,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x87\""
 	}
 	"04ea70d140910b60556150371a9aaa4a": {
 		input: {
@@ -1571,7 +1571,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"05fc2cfe5c5939478374b61850d116c4": {
 		input: {
@@ -1679,7 +1679,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"06869a5b027988949fba6012a296d3ff": {
 		input: {
@@ -1733,7 +1733,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xd2\""
 	}
 	"06a9cc39c0b449f280707d844c7c02e5": {
 		input: {
@@ -1915,7 +1915,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"0763affe102cabec6211d274ab2be7fe": {
 		input: {
@@ -1977,7 +1977,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xa5\""
 	}
 	"07ae5945f8041383efdf8e5df68f40cd": {
 		input: {
@@ -2250,7 +2250,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"08caae339f56b279c831d9fa0a8455f6": {
 		input: {
@@ -2362,7 +2362,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xff\""
 	}
 	"0931efc8dbe34f8c08506e1326e7af3f": {
 		input: {
@@ -2498,7 +2498,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"09c72e81636a6c68990544d2532b472c": {
 		input: {
@@ -2892,7 +2892,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"0b40d923b23aea5cf57ca5c945a63cae": {
 		input: {
@@ -2922,7 +2922,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"0b54371e8d179f6e96b6a3c60e01463d": {
 		input: {
@@ -3232,7 +3232,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"0c9c8e94e3859ccfb4ce454a8d7e89a3": {
 		input: {
@@ -3369,7 +3369,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xed\""
 	}
 	"0d43e45e16d7dbcf3d87fe934b9b6fbf": {
 		input: {
@@ -3524,7 +3524,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"0dc5ee1ad5ffa964ce138eaac98428ac": {
 		input: {
@@ -3613,7 +3613,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x92\""
 	}
 	"0e0db605ef7223d96105658cff196c88": {
 		input: {
@@ -3804,7 +3804,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"0ea41cbba49a18c8ebd9c47ad26211a2": {
 		input: {
@@ -3844,7 +3844,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xae\""
 	}
 	"0ebb073afdafe80e469c78575903d100": {
 		input: {
@@ -3968,7 +3968,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"0f8442e232bca99abd587b3660d8fdd8": {
 		input: {
@@ -4244,7 +4244,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:9: empty tag name"
 	}
 	"105d96a02bd1287cf3fde8cfef2808f9": {
 		input: {
@@ -4429,7 +4429,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	"10d09683ec6977514fdab6e35f6e794b": {
 		input: {
@@ -4518,7 +4518,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"10fec08f27c2a39a31b54b530c77b31a": {
 		input: {
@@ -4970,49 +4970,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: result: [{
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: "1"
-				value: float: 5
-			}]
-		}, {
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: "1"
-				value: float: 6
-			}]
-		}, {
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: "1"
-				value: float: 6
-			}]
-		}, {
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: "1"
-				value: float: 0
-			}]
-		}, {
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: "1"
-				value: float: 5
-			}]
-		}, {
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: binary: "9Q=="
-				value: float: 5
-			}]
-		}]
+		output: error: "cannot get metric 5: cannot get field 0: at line 6:3: invalid utf-8 sequence in token \"\\xf5\""
 	}
 	"128016fb4d4f913a659928c46f3b508b": {
 		input: {
@@ -5401,7 +5359,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"142334334ae0f915915304df64c616c0": {
 		input: {
@@ -5463,7 +5421,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:4: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:13: empty tag name"
 	}
 	"1437a5b029073caec3d6c0e5f30fdca0": {
 		input: {
@@ -5640,7 +5598,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"14f4bb07a3d3b413dd6959a28c303f13": {
 		input: {
@@ -5833,7 +5791,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	"159a9103ecc8c88665293bc88a992bbc": {
 		input: {
@@ -5960,7 +5918,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\t' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x9c\""
 	}
 	"15e2659344d354018b358d2d61db8dba": {
 		input: {
@@ -6307,7 +6265,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:5: empty tag name"
 	}
 	"16c2981759e29c38888a5b0688236b6c": {
 		input: {
@@ -6587,7 +6545,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:10: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:37: empty tag name"
 	}
 	"182c30f8c59806c98135329aa30ca519": {
 		input: {
@@ -6997,7 +6955,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 1: cannot get field 0: at line 2:3: invalid character '\\x0f' found at start of field key"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"1993c314dad5ef6e210a7d0b9d99cae2": {
 		input: {
@@ -7778,7 +7736,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x9d\""
 	}
 	"1c43e1548d515184e3bd4a07de0f2764": {
 		input: {
@@ -8078,7 +8036,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xfb\""
 	}
 	"1dafb04e5ad22fb044914d0dc6e942b4": {
 		input: {
@@ -8218,7 +8176,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"1e2937776a093fc0e7315d9a77d670db": {
 		input: {
@@ -8386,7 +8344,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xfb\""
 	}
 	"1e9a3cdc6294192541afb0503f3df76e": {
 		input: {
@@ -8492,7 +8450,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"1ecee786f520f7037e3e810f7918c197": {
 		input: {
@@ -8779,7 +8737,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:44: empty tag name"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xf4\\xe2\\xfe\\xcd\\xf4\\xf3\\xcd\\xf4\\xf3\\xda\\xf4\\xe2\\xfe\\xcd\\xf4\\xf3\\xf4\\xf3\\xcd\\xf4\\xf3\\xfe\\xcd\\xf4\\xf3\\xcd\\xcd\\xf4\\xf3\\xf4\\xf3\\xcd\\xf4\\xf4\\xf3\\xf4\\xf3\\xcd\\xf4\\xf3==5\""
 	}
 	"1f9b2453695b3e852a0823f1ad200e08": {
 		input: {
@@ -8810,7 +8768,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"1fb1e6eee0eee12f60c578b5692e4a24": {
 		input: {
@@ -9320,7 +9278,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: expected '=' after tag key \"\\xfe\", but got '\\x00' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xfe\""
 	}
 	"22035d389585f60b51c7890e569b8cd9": {
 		input: {
@@ -9529,7 +9487,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"22c93c06fbf4a3648268bc9b0f6483ad": {
 		input: {
@@ -9552,7 +9510,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:7: invalid character '\\n' found at start of field key"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xa5\""
 	}
 	"22dd43329d141af1f0ba9dd9b8373d35": {
 		input: {
@@ -9760,7 +9718,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"23617c01b31e6410deaee350546063c2": {
 		input: {
@@ -10085,7 +10043,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"2439a7e2fda2448f3046168b2c320c14": {
 		input: {
@@ -10303,7 +10261,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"24df369442d13b7a7552fa0c01c82647": {
 		input: {
@@ -10468,7 +10426,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"25757d1b9e8c3c15c4106ee82c88dce4": {
 		input: {
@@ -11282,7 +11240,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	"27e8d2c35ffe4e7d2aff0abe06c85b52": {
 		input: {
@@ -11859,7 +11817,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"29b393908bc441de6dfd2666867dbc56": {
 		input: {
@@ -12365,7 +12323,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"2b87167096f3c395620b738bb2fbb0f1": {
 		input: {
@@ -12534,7 +12492,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"2c456a6bb5cc925e27b1d7fbea8226dc": {
 		input: {
@@ -12682,7 +12640,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 2: cannot get field 0: at line 3:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"2caf677ef0e00ed03fe12a9a9d67baf7": {
 		input: {
@@ -13045,7 +13003,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 2: cannot get field 0: at line 3:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"2df883fde365980acc94e170aa25dc9a": {
 		input: {
@@ -13179,7 +13137,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 3: cannot get field 0: at line 4:3: invalid character '\\x0f' found at start of field key"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"2e385b4b297b2221820e0fff356a9011": {
 		input: {
@@ -13197,7 +13155,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"2e4ef67a42231854062adba55b824e48": {
 		input: {
@@ -13534,7 +13492,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	"2f55697a13839a13e63a9441fb38cfbd": {
 		input: {
@@ -14010,7 +13968,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"3114c64bd053717ae683ca525bbe3279": {
 		input: {
@@ -14112,7 +14070,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"317994fbe9ff2fbb00c7e56eff9b7dc8": {
 		input: {
@@ -14484,7 +14442,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	"32a88444f7289c126b768f1ccd9db14c": {
 		input: {
@@ -14545,7 +14503,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"32d16f4fa40037b6d939cd05d8bbe5d2": {
 		input: {
@@ -14784,7 +14742,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:17: empty tag name"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xda\""
 	}
 	"33aac0add2d79676459b77730addc0c8": {
 		input: {
@@ -14868,7 +14826,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 1: cannot get tag 1: at line 2:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 1: cannot get measurement: at line 2:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"33d5b0ab01e0ab91d5bf6124a11d332b": {
 		input: {
@@ -14978,7 +14936,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xb1\""
 	}
 	"344a42ed6241c07c581554ad57d2f8b5": {
 		input: {
@@ -15122,7 +15080,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 23: at line 1:95: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get field 1: at line 1:7: invalid utf-8 sequence in token \"\\x89\""
 	}
 	"34ad82b404936ba2ed963a674846ceeb": {
 		input: {
@@ -15170,7 +15128,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"350e56a2390f74060c66cca3da8f561d": {
 		input: {
@@ -15420,7 +15378,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8d\""
 	}
 	"3625e767bf2e39ce62102b688b79e2c5": {
 		input: {
@@ -15835,7 +15793,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x9d\""
 	}
 	"37acf5d80fdb0b36f272205ac10c8db6": {
 		input: {
@@ -15844,7 +15802,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"37b22200fbc1026147ba47815ebce83b": {
 		input: {
@@ -15964,7 +15922,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"381eab1d8ac5bc944546060947e816e1": {
 		input: {
@@ -16042,7 +16000,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"38506e286d69947f82f74d670bdc6be0": {
 		input: {
@@ -16336,7 +16294,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:21: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xe9\""
 	}
 	"3907ba6eb987e48bbb56552adf16f9e1": {
 		input: {
@@ -16537,7 +16495,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xed\""
 	}
 	"39c5fc7364ea0f54b8c4992268b5600d": {
 		input: {
@@ -16577,7 +16535,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 6: at line 1:27: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"39f87e7272122176008f7196fcd97dc1": {
 		input: {
@@ -16613,7 +16571,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"3a1b82cd7b2a6450dda370eed8e3fb3b": {
 		input: {
@@ -16819,7 +16777,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xed\""
 	}
 	"3a9b8058a77cf318bec3be66c1031ffe": {
 		input: {
@@ -16901,7 +16859,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"3af9dab799af5432dbe679d64c52522b": {
 		input: {
@@ -16910,7 +16868,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"3afbc1f13428f559199b4002c56f14f7": {
 		input: {
@@ -17297,7 +17255,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"3c79ed632970f5ad88fad9946ced894c": {
 		input: {
@@ -17912,7 +17870,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:73: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xfe\""
 	}
 	"3e9670556462749f913da7bbc3e3f030": {
 		input: {
@@ -18798,7 +18756,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\t' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x9c\""
 	}
 	"41b97c31606e8e9bb91a47d383f0736a": {
 		input: {
@@ -19230,7 +19188,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"43020303d156ae3e021b05606aac1e4e": {
 		input: {
@@ -19239,7 +19197,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"4305dc7cd7db3d37d8912af34da8b941": {
 		input: {
@@ -19279,7 +19237,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xfa\""
 	}
 	"431db005310ca1bca39f792326843cf6": {
 		input: {
@@ -19668,7 +19626,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"446eb6f22873c5f3f288407293efac34": {
 		input: {
@@ -20127,7 +20085,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"45e8e1c0f4948584eb9c251adfa05471": {
 		input: {
@@ -21028,7 +20986,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\f' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"48c72ee82a8659fee0426c0299e68223": {
 		input: {
@@ -21037,7 +20995,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	"48ce021c28c75f679ceb1433bf6aebd6": {
 		input: {
@@ -21066,7 +21024,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xac\""
 	}
 	"48f351e547743ea790fea59887846b7c": {
 		input: {
@@ -21245,7 +21203,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: duplicate key \"6\""
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xef\""
 	}
 	"49c8cc8e8cc9fe6611783bd349f129b0": {
 		input: {
@@ -22219,7 +22177,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"4d86239dcdf7ed84567aa6f7c6ab632c": {
 		input: {
@@ -22899,7 +22857,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"4f7987a75608f2ed35d820e71c51e471": {
 		input: {
@@ -23399,7 +23357,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"516cb95778bd191051af6813a933d2c3": {
 		input: {
@@ -23570,7 +23528,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"520106ccd9436caa3253502a06ec3913": {
 		input: {
@@ -24096,49 +24054,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: result: [{
-			time: 946815194000000000
-			name: "8"
-			fields: [{
-				key: "f"
-				value: string: ""
-			}]
-		}, {
-			time: 946815194000000000
-			name: binary: "hg=="
-			fields: [{
-				key: "f"
-				value: string: ""
-			}]
-		}, {
-			time: 946815194000000000
-			name: binary: "rw=="
-			fields: [{
-				key: "f"
-				value: string: ""
-			}]
-		}, {
-			time: 946815194000000000
-			name: binary: "9A=="
-			fields: [{
-				key: "f"
-				value: string: ""
-			}]
-		}, {
-			time: 946815194000000000
-			name: binary: "rw=="
-			fields: [{
-				key: "f"
-				value: string: ""
-			}]
-		}, {
-			time: 946815194000000000
-			name: binary: "9A=="
-			fields: [{
-				key: "f"
-				value: string: ""
-			}]
-		}]
+		output: error: "cannot get metric 1: cannot get measurement: at line 2:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"540c65fa15e2d265ff9a1a4e2b42b9cf": {
 		input: {
@@ -24326,7 +24242,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"549c32aa6f0956d12ad28357a31be5f8": {
 		input: {
@@ -24697,7 +24613,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:6: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:21: empty tag name"
 	}
 	"55fc104975e87df33e383dbc6584dbea": {
 		input: {
@@ -24732,7 +24648,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"561eff50d34ae93dab88f4af57c5d013": {
 		input: {
@@ -24750,7 +24666,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:5: invalid utf-8 sequence in token \"\\x8d\\v6\""
 	}
 	"56237430acc001250acea879c0d4fc5e": {
 		input: {
@@ -25299,7 +25215,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"581dd019a88d5d8b1c20923259875162": {
 		input: {
@@ -25344,7 +25260,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"583167bf97737cf416e298e1941f8853": {
 		input: {
@@ -25907,7 +25823,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"5a9b8343d989c17e0e48a011dfd607e8": {
 		input: {
@@ -26365,7 +26281,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"5c3e4f5818cd76fcc231161a2f0a0b16": {
 		input: {
@@ -26702,7 +26618,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"5d761b21ca8e1febfcdeec055b464656": {
 		input: {
@@ -27023,7 +26939,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:4: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:13: empty tag name"
 	}
 	"5e861c6230e339f41c6f3cb985062220": {
 		input: {
@@ -27032,7 +26948,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:18: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xe2\\xf3\\xb5\\xafe\""
 	}
 	"5ea432869bdf03472e9922d1b1e6f2ef": {
 		input: {
@@ -27098,7 +27014,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"5ed8cd26fb33d677a78394623d43e72a": {
 		input: {
@@ -27547,7 +27463,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"6094cec64fc0083a56a419f4eecf3ea6": {
 		input: {
@@ -27656,7 +27572,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"6125cfbe48b84c7755717e8fc7ea0193": {
 		input: {
@@ -27758,7 +27674,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"6149bd7dae9dcb56ca5eba070e9a3be8": {
 		input: {
@@ -27776,7 +27692,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"615a3e723a426fcf251f6859ce1e7408": {
 		input: {
@@ -27785,7 +27701,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xff\""
 	}
 	"615f1ddc430c1f105e89385e3e95a79f": {
 		input: {
@@ -28701,7 +28617,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"646a1b4da7a4fbcc2c6f9f2de0491e85": {
 		input: {
@@ -28853,7 +28769,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"6514957d25e1c122c2ecb52aa0f9fb09": {
 		input: {
@@ -29868,7 +29784,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:11: empty tag name"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xda\""
 	}
 	"685036e1d3952093ec5f1c9e794f8dda": {
 		input: {
@@ -29886,7 +29802,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:15: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xfe\""
 	}
 	"685b46d49562762fcb754ce3ac98c558": {
 		input: {
@@ -29970,7 +29886,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 2: cannot get field 0: at line 3:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"687e99b98ad63e3003e3f16e7756a3c7": {
 		input: {
@@ -30181,7 +30097,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"69713d72bd9f594e617425de7753f0ca": {
 		input: {
@@ -30742,7 +30658,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 3: cannot get field 0: at line 4:3: invalid character '\\x0f' found at start of field key"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"6bacc42d2ba4494c702ee062be84cf1f": {
 		input: {
@@ -30894,7 +30810,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"6c646338312c0f90ed18795cc8aa4034": {
 		input: {
@@ -31155,7 +31071,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 2: cannot get field 0: at line 3:3: invalid character '\\x0f' found at start of field key"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"6d41c4031c1bd6834fcf6a77be8e71fa": {
 		input: {
@@ -31164,7 +31080,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"6d4efc973cebfe7a5cbec1d80ecd427d": {
 		input: {
@@ -31182,7 +31098,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x9c\""
 	}
 	"6d638c8a132b40ac1c82feb284369974": {
 		input: {
@@ -31861,7 +31777,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	"6f81ab374daf8f24dd9f31aaa8a682ae": {
 		input: {
@@ -31968,7 +31884,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:10: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:5: invalid utf-8 sequence in token \"\\\"\\v\\xbd\\ff\""
 	}
 	"6ff10f5fe2b717518f837793b6805381": {
 		input: {
@@ -32568,7 +32484,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"71ec5b92bea366e5b0d5c96fd053048a": {
 		input: {
@@ -32680,7 +32596,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"72921be66f3106227898e178b655006b": {
 		input: {
@@ -32788,7 +32704,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"72dea6709209726911f484368782fef2": {
 		input: {
@@ -32957,7 +32873,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"737ee080ca5d4734ce593e157d0a316e": {
 		input: {
@@ -33274,7 +33190,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"74a61a9e1aa2eeaaa66dd986ed499cab": {
 		input: {
@@ -33337,7 +33253,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"74d83eaedf0758fcf924259de8eb655e": {
 		input: {
@@ -33423,7 +33339,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"7522cfbdaa36d3f72c11de8b5c73ca40": {
 		input: {
@@ -33432,7 +33348,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"7529a5c159c867cbcbe9c665f8faa2ac": {
 		input: {
@@ -33771,7 +33687,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"764816ac2aac246e77eeb16ebbf9a7f6": {
 		input: {
@@ -34295,7 +34211,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"77fbaab8a29739d57d26696e8522f240": {
 		input: {
@@ -34401,7 +34317,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:5: invalid utf-8 sequence in token \"\\\"\\v\\x86\""
 	}
 	"7887d1f7d818b4cb8411af7c6c28f229": {
 		input: {
@@ -35934,7 +35850,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"7e13908609ae8781f04b77693dfa5316": {
 		input: {
@@ -36050,7 +35966,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"7e54da4afb6c40f7fd823e60697f3bf0": {
 		input: {
@@ -36946,7 +36862,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"81431c46b3d5c3b20bdd3a9a0f2439a4": {
 		input: {
@@ -37174,7 +37090,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"81f146d942b7a361afd8584fce7b2b83": {
 		input: {
@@ -38041,7 +37957,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"846c754f881b3b2ee191bc4bdeb5ad75": {
 		input: {
@@ -38307,7 +38223,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	"85185e2f124d58aa1e16a1fdd239b0eb": {
 		input: {
@@ -38348,7 +38264,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"85306c12dbd358899e6160f62726382c": {
 		input: {
@@ -38624,7 +38540,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:74: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:5: invalid utf-8 sequence in token \"\\xbd\\v\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\4\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\\\\\\\"\""
 	}
 	"85fa7c57dfeef3bef1a4b9a4ffaebabb": {
 		input: {
@@ -38772,7 +38688,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:9: empty tag name"
 	}
 	"86a986a6c6e6e89a0762baeaea4a6e05": {
 		input: {
@@ -38939,7 +38855,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"875487ed4d4c232eb850f9bb70af364c": {
 		input: {
@@ -40387,7 +40303,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:6: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:21: empty tag name"
 	}
 	"8d1101d76ec5a96a525a53fc44d3f94e": {
 		input: {
@@ -41086,7 +41002,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x82\""
 	}
 	"8f335ea3c6df22d19afe235303f6e8e3": {
 		input: {
@@ -41095,7 +41011,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"8f35b98bfd62312d1add80c7af29581d": {
 		input: {
@@ -41293,7 +41209,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xf9\""
 	}
 	"8fde133330cf16aaa3e1eeaf8c170deb": {
 		input: {
@@ -41356,7 +41272,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 2: cannot get field 0: at line 3:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"9028b1ffe37efe1ce834e2ab6619df41": {
 		input: {
@@ -41590,7 +41506,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"90f969252db89c207cd0595dd291cf0b": {
 		input: {
@@ -41796,7 +41712,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	"91d9a89c6d12af7357d146b6322bb790": {
 		input: {
@@ -41829,7 +41745,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"920e25b44031b72b3f4e75a57cf7579b": {
 		input: {
@@ -43386,7 +43302,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:5: invalid utf-8 sequence in token \"E\\v\\x86\""
 	}
 	"96df1f78cf19b33fdc003f24ff50642c": {
 		input: {
@@ -43404,7 +43320,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"96f19b02c336a6be44e5da376009818e": {
 		input: {
@@ -44629,7 +44545,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	"9b8b059be99eec81a717304ec6845e5d": {
 		input: {
@@ -44741,7 +44657,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"9bcf372f63aa426e6ede9511dfe06e1b": {
 		input: {
@@ -44983,7 +44899,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"9c4abddb817d044960de5a890a90ba56": {
 		input: {
@@ -45062,7 +44978,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	"9c8cd880ebebfc3d3a370d1725f5976c": {
 		input: {
@@ -45529,7 +45445,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:57: empty tag name"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xf4\\x8f\\xbf\\xf4\\x8f\\x9f\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\xbf\\xbf\""
 	}
 	"9e6be0cb90523a693a590efbdfd727fb": {
 		input: {
@@ -45748,7 +45664,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	"9f357160a4ba923e97c87da6ca379185": {
 		input: {
@@ -46456,7 +46372,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	a1d0815c72521eae9c1677f4f4e3b3a5: {
 		input: {
@@ -46550,7 +46466,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	a231e3f9cdd94781e8285e036d47eabb: {
 		input: {
@@ -46735,7 +46651,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:9: empty tag name"
 	}
 	a2cdc4d18a8bfff8e109ba6ba5d9eecf: {
 		input: {
@@ -46888,7 +46804,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	a34414555bba9c9e3e90b814c5a42308: {
 		input: {
@@ -46914,7 +46830,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	a35be0f02cc9ac871a3376b56520ca52: {
 		input: {
@@ -47781,7 +47697,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 1: cannot get field 0: at line 2:3: invalid character '\\x0f' found at start of field key"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	a667a7c1a0587907bf12d6c3cc130fa8: {
 		input: {
@@ -48122,7 +48038,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	a7735a73a377255e7508907ad0966242: {
 		input: {
@@ -48575,7 +48491,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	a926139030749c96f4f0f4179f6eed32: {
 		input: {
@@ -48638,7 +48554,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	a94f3fef520f5940339a7e1dec67240c: {
 		input: {
@@ -49168,7 +49084,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	ab77112ae169414919c840c700860cd9: {
 		input: {
@@ -49403,7 +49319,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	ac1e8906eeed6212a904481f3b8db451: {
 		input: {
@@ -49825,7 +49741,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\t' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x9c\""
 	}
 	addf4c6e2a55fe7ddc108a13ad52cbcf: {
 		input: {
@@ -50420,7 +50336,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:17: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xfe\""
 	}
 	b01486a92a1652a56f7117567a147c71: {
 		input: {
@@ -50587,7 +50503,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	b09a252e24f9f78a6d5c9ef6da504001: {
 		input: {
@@ -50655,7 +50571,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	b0e685bd6b3a16bc1859c97cb9678627: {
 		input: {
@@ -50719,7 +50635,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	b11d4f5299bb5fd535ce5f3b801b126b: {
 		input: {
@@ -50795,7 +50711,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	b191ac36a2def13fbf14d0a7c9da12f6: {
 		input: {
@@ -50822,7 +50738,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xff\""
 	}
 	b195485fbdf036d4b90048ae58d38b90: {
 		input: {
@@ -51136,7 +51052,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	b27950dca6d92cd4ab2d98d1d4ca7920: {
 		input: {
@@ -51299,7 +51215,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	b34200e06fa0c3eb52641385ef71c306: {
 		input: {
@@ -51969,7 +51885,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:6: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"u\\xe2\\xdb\\xdc\\xe2\""
 	}
 	b5c25fe945045783e928583b46448293: {
 		input: {
@@ -52572,7 +52488,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xcf\""
 	}
 	b7cab6ca00e7127e39b488d501429345: {
 		input: {
@@ -53550,7 +53466,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	bbc52ec77ac201b47e303d163db936b1: {
 		input: {
@@ -53599,7 +53515,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	bc088d4028d017f5f2909028cdeae0d4: {
 		input: {
@@ -54382,7 +54298,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:55: empty tag name"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xf4\\x8f\\xbf\\xf4\\x8f\\x9f\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\xf4\\x8f\\xbf\\U0010ffff\""
 	}
 	be8b39e9bac2e5e023b734462e483db5: {
 		input: {
@@ -54847,7 +54763,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xcf\""
 	}
 	c0089e423ec5f11d4bc83a9408d4dd1c: {
 		input: {
@@ -54887,7 +54803,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	c01f1f61ee41f2e5c7175cf9360d5e59: {
 		input: {
@@ -55385,7 +55301,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	c20e630065d74d4137085c629e9dea27: {
 		input: {
@@ -55708,7 +55624,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	c39543ee2796eec63b4ed2628be8aeda: {
 		input: {
@@ -56350,7 +56266,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	c5ceb70c9716840e6d9b0ac22a22c9b1: {
 		input: {
@@ -56878,7 +56794,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	c7f6497a67c33bf987e8c73c4effb360: {
 		input: {
@@ -56973,7 +56889,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	c82734a24aa4afe5662843d6fadfe653: {
 		input: {
@@ -57464,7 +57380,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 2: cannot get field 0: at line 3:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	ca102b3ebdfd7bda6b065d81ef96bb17: {
 		input: {
@@ -57491,7 +57407,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:25: empty tag name"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xf4\\xe2\\xfe\\xcd\\xf4\\xf3\\xcd\\xf4\\xf3\\xe2\\xfe\\xcd\\xf4\\xe2\\xfe\\xcd\\xf4\\xf3\\xcd\\xf4\\xf3=0(\""
 	}
 	ca42c0f8e4a3c6bf0add8903f3326f5a: {
 		input: {
@@ -58007,7 +57923,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	cbdd7b8aebe8c4b967ce9db36cc3245e: {
 		input: {
@@ -59013,7 +58929,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:19: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xfe\""
 	}
 	cf1241392c80df4175accaf6ba6cb1ac: {
 		input: {
@@ -59208,7 +59124,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8e\""
 	}
 	cfe39420bd345de33bc34809636ab39b: {
 		input: {
@@ -59429,7 +59345,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 4: cannot get field 0: at line 5:3: expected field key but none found"
+		output: error: "cannot get metric 1: cannot get measurement: at line 2:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	d0a5532a4cbedc68a6c76b2c68d56814: {
 		input: {
@@ -59592,7 +59508,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:42: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xf9˼\\xd0 \""
 	}
 	d11b56869ceef66aad92eb6def7cfc3e: {
 		input: {
@@ -59714,7 +59630,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 1: cannot get field 0: at line 2:3: invalid character '\\x0f' found at start of field key"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	d1812ec6248ee82056f0596f5a80c9e0: {
 		input: {
@@ -60111,7 +60027,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:4: expected '=' after tag key \"\", but got '\\v' instead"
 	}
 	d2a0c11ba779697ee07bb50dd6ff3267: {
 		input: {
@@ -60167,7 +60083,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 35: at line 1:178: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:6: invalid utf-8 sequence in token \"\\xef\""
 	}
 	d2c68718c7dc2055050b505ec20febce: {
 		input: {
@@ -60230,7 +60146,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\u007f' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:4: expected '=' after tag key \"\", but got '\\u007f' instead"
 	}
 	d30503931d3a2c4201a1c9a700e9cfb8: {
 		input: {
@@ -60432,7 +60348,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	d3c420d456741a6640bb640bd0579093: {
 		input: {
@@ -60474,7 +60390,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 2: cannot get field 0: at line 3:3: invalid character '\\x0f' found at start of field key"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	d3edc14afef464831069f425969f5ce3: {
 		input: {
@@ -60687,7 +60603,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 3: cannot get field 0: at line 4:3: invalid character '\\x0f' found at start of field key"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	d495db4152b6df682ffa74f82892e05e: {
 		input: {
@@ -60763,7 +60679,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:6: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:11: empty tag name"
 	}
 	d4d140a160af18ce4dd407a5ae1923b9: {
 		input: {
@@ -60851,7 +60767,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:5: cannot parse value for field key \"\\x80\": invalid float value syntax"
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"\\x80\""
 	}
 	d50bfd2e112ce6df3602d101e3c3c0f5: {
 		input: {
@@ -60892,7 +60808,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	d525eb2a92f5f13a6224653ff9846171: {
 		input: {
@@ -61958,7 +61874,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	d9071f8542ca0aeb4f4fbd70bb015abd: {
 		input: {
@@ -62560,7 +62476,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	db009c96a441712d888bd8217b644a54: {
 		input: {
@@ -64618,7 +64534,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:4: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:13: empty tag name"
 	}
 	df3e67acbe9ebe12ef2147712dfda48c: {
 		input: {
@@ -64627,7 +64543,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	df3f5aaefabbd4ed0f97d22c379e90f5: {
 		input: {
@@ -64970,7 +64886,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	e095120aa8d95843f2640996e627d62d: {
 		input: {
@@ -65041,7 +64957,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: empty tag name"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: empty tag name"
 	}
 	e0b98cc95f364a2b4faa595a85f2a533: {
 		input: {
@@ -65648,7 +65564,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	e30319724a03aa4267bbc6a65fc7f5f3: {
 		input: {
@@ -65712,7 +65628,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8c\""
 	}
 	e33d55e4d06499869b0364a7d547e492: {
 		input: {
@@ -65721,7 +65637,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:5: expected '=' after tag key \"\", but got '\\u007f' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xe0\\xb1\\xe3\\x8c\""
 	}
 	e3503e1fd95e77f6d23e388fcc771bc3: {
 		input: {
@@ -65818,7 +65734,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	e3bba7973f174e8f454633ecc5a8ff95: {
 		input: {
@@ -66312,7 +66228,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	e54624876aa058b5c5d50b7d0a971cd6: {
 		input: {
@@ -66622,7 +66538,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:16: expected field key but none found"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xe7\\xdb\\xd9\\xe8\\xb2e\""
 	}
 	e5f87ea37fcd7ee9dadfd30ca02c9d59: {
 		input: {
@@ -66686,7 +66602,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xed\""
 	}
 	e6203c70d2de03ca75c887cbaa6ec01b: {
 		input: {
@@ -67158,7 +67074,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 1: at line 1:8: expected '=' after tag key \"\", but got '=' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	e7c171122e7d6371947c5f68de32a60c: {
 		input: {
@@ -67719,7 +67635,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xbd\""
 	}
 	eac920517e49751e0055bb6a2619d35a: {
 		input: {
@@ -68594,6 +68510,15 @@ corpus: decode: {
 		}
 		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid character '\\x02' found at start of measurement name"
 	}
+	edc76ef5cc330867490f7f7b27c72593: {
+		input: {
+			text:           "cpu_load_short,host=server01,region=us-west"
+			defaultTime:    42000000000
+			precision:      "1ns"
+			implementation: "custom"
+		}
+		output: error: "cannot get metric 0: cannot get field 0: at line 1:44: expected field key but none found"
+	}
 	eddc55197c3c1ff150c3edc109535391: {
 		input: {
 			text:           "\"\v\u0001=\"\"\v1431014195155010O=\"\"\v6310614316820010O=\"\"\v6310614316820010O=\"\"\v6301431682016897O=\"\"\v6301431682016897O=\"\"\v6301431682016897O=\"\"\v6301431682016897O"
@@ -69275,7 +69200,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	efda643faa608c618057be376dd4f846: {
 		input: {
@@ -69738,7 +69663,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 1: cannot get tag 0: at line 2:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 1: cannot get measurement: at line 2:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	f13e69feb345800fee0a3cda0e5aa121: {
 		input: {
@@ -70173,35 +70098,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: result: [{
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: "1"
-				value: float: 5
-			}]
-		}, {
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: "1"
-				value: float: 6
-			}]
-		}, {
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: "1"
-				value: float: 5
-			}]
-		}, {
-			time: 946815194000000000
-			name: "0"
-			fields: [{
-				key: binary: "9Q=="
-				value: float: 5
-			}]
-		}]
+		output: error: "cannot get metric 3: cannot get field 0: at line 4:3: invalid utf-8 sequence in token \"\\xf5\""
 	}
 	f25fd71851b9359d36fc52da32a4612c: {
 		input: {
@@ -70443,7 +70340,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x8a\""
 	}
 	f2fcceac380aabc5e51f962d7c2f3c29: {
 		input: {
@@ -70546,7 +70443,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	f36215745aa918c3bc6f97e9d7370239: {
 		input: {
@@ -71040,7 +70937,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	f597038c1b271de04874d98a11ecd4e8: {
 		input: {
@@ -71333,7 +71230,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	f707dbb827afe99710cd22dcac7d8756: {
 		input: {
@@ -71473,7 +71370,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	f7433d928865604f406529a40627ce28: {
 		input: {
@@ -71828,7 +71725,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	f8a1f6bfe69bd8c2e2975060cb7b79f5: {
 		input: {
@@ -72058,7 +71955,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	f976e503723cf303640897990ffe9e26: {
 		input: {
@@ -72143,7 +72040,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	f9d0ea56b6ca819cd1702a40f01bcab2: {
 		input: {
@@ -72284,7 +72181,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: expected '=' after tag key \"\\xfe\", but got '\\x00' instead"
+		output: error: "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"\\xfe\""
 	}
 	fa2e0f6f67095e047184428d74d73899: {
 		input: {
@@ -72474,7 +72371,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	fab5139d92a29500ad7452818aded2e6: {
 		input: {
@@ -72594,7 +72491,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	fb3d59536c89bc1127fa0b16e8a3cf05: {
 		input: {
@@ -72896,7 +72793,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	fc76035b813b0a06e06235ef1d375fcd: {
 		input: {
@@ -72976,7 +72873,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\xed\""
 	}
 	fcd559242f2805e183f329be6ef581da: {
 		input: {
@@ -72985,7 +72882,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x86\""
 	}
 	fcd9114f30d907158f3f57575e5553cb: {
 		input: {
@@ -73085,7 +72982,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get field 0: at line 1:3: invalid character '\\v' found at start of field key"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	fd1973405ad8b45c2736482eebfc08a6: {
 		input: {
@@ -73162,7 +73059,7 @@ corpus: decode: {
 			precision:      "1ns"
 			implementation: "fuzz"
 		}
-		output: error: "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+		output: error: "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"\\x80\""
 	}
 	fd554012ec6ea7cab7f32f943d81a216: {
 		input: {
