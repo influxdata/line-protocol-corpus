@@ -42,7 +42,15 @@ func MustNewValue(x interface{}) Value {
 }
 
 func (v1 Value) Equal(v2 Value) bool {
-	return v1.Kind() == v2.Kind() && v1.number == v2.number && bytes.Equal(v1.bytes, v2.bytes)
+	k := v1.Kind()
+	if v2.Kind() != k {
+		return false
+	}
+	if k != Float {
+		return v1.number == v2.number && bytes.Equal(v1.bytes, v2.bytes)
+	}
+	// Floats can't be compared bitwise.
+	return v1.FloatV() == v2.FloatV()
 }
 
 func NewValue(x interface{}) (Value, bool) {
