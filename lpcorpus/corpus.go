@@ -20,14 +20,17 @@ import (
 )
 
 // ReadCorpusJSON reads the corpus.json file named by file.
-func ReadCorpusJSON(file string) (*Corpus, error) {
-	data, err := ioutil.ReadFile(file)
+func ReadCorpusJSON(corpusFile string) (*Corpus, error) {
+	data, err := ioutil.ReadFile(corpusFile)
 	if err != nil {
 		return nil, err
 	}
 	var r Corpus
 	if err := json.Unmarshal(data, &r); err != nil {
-		return nil, err
+		if terr, ok := err.(*json.UnmarshalTypeError); ok {
+			return nil, fmt.Errorf("unmarshal error at %s:#%d: %v", corpusFile, terr.Offset, err)
+		}
+		return nil, fmt.Errorf("unmarshal error at %s: %v", corpusFile, err)
 	}
 	return &r, nil
 }
@@ -160,6 +163,7 @@ func (o1 *EncodeOutput) Equal(o2 *EncodeOutput) bool {
 }
 
 type DecodeInput struct {
+	Key            string    `json:"key"`
 	Text           Bytes     `json:"text"`
 	DefaultTime    int64     `json:"defaultTime"`
 	Precision      Precision `json:"precision"`
@@ -167,6 +171,7 @@ type DecodeInput struct {
 }
 
 type EncodeInput struct {
+	Key            string    `json:"key"`
 	Point          *Point    `json:"point"`
 	Precision      Precision `json:"precision"`
 	Implementation string    `json:"implementation,omitempty"`
