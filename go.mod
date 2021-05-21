@@ -5,6 +5,8 @@ go 1.16
 require (
 	github.com/frankban/quicktest v1.13.0
 	github.com/google/go-cmp v0.5.5
+	// Note: out of date until line-protocol package updated
+	// with new corpus data.
 	github.com/influxdata/line-protocol/v2 v2.0.0
 	github.com/kr/text v0.2.0 // indirect
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect

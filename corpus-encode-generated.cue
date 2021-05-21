@@ -1237,10 +1237,7 @@ corpus: encode: {
 			precision:      "1ns"
 			implementation: "influxdbv2models"
 		}
-		output: result: """
-			cpu,host=serverA,region=us-east str="foo
-			bar",value=1 1000000000
-			"""
+		output: result: "cpu,host=serverA,region=us-east str=\"foo\\nbar\",value=1 1000000000"
 	}
 	"70101bc0874d57fec2f83497a5a6ece4": {
 		input: {
