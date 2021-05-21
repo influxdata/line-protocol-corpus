@@ -11,6 +11,8 @@ github.com/influxdata/line-protocol/v2 v2.0.0-20210312151457-c52fdecb625a h1:tz8
 github.com/influxdata/line-protocol/v2 v2.0.0-20210312151457-c52fdecb625a/go.mod h1:6+9Xt5Sq1rWx+glMgxhcg2c0DUaehK+5TDcPZ76GypY=
 github.com/influxdata/line-protocol/v2 v2.0.0-20210520103755-6551a972d603 h1:ia96+xt3Z0lh8glUXFsXATBwTzU9tmTXqnVsBd5r8ME=
 github.com/influxdata/line-protocol/v2 v2.0.0-20210520103755-6551a972d603/go.mod h1:QKw43hdUBg3GTk2iC3iyCxksNj7PX9aUSeYOYE/ceHY=
+github.com/influxdata/line-protocol/v2 v2.0.0 h1:4bFR4h6sxVvfBdnqWeUnjVp5qHz8cOhFpW+inXbvGi8=
+github.com/influxdata/line-protocol/v2 v2.0.0/go.mod h1:QKw43hdUBg3GTk2iC3iyCxksNj7PX9aUSeYOYE/ceHY=
 github.com/kr/pretty v0.2.1 h1:Fmg33tUaq4/8ym9TJN1x7sLJnHVwhP33CNkpYV/7rwI=
 github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
