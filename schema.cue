@@ -14,17 +14,24 @@ import (
 		"defaultTime": defaultTime
 		"precision":   precision
 	}))))"
+
 	text: string | {
 		// binary holds base64-encoded text.
 		binary: string
 	}
+
+	// about holds human-readable information about the
+	// test case.
+	about?: string
+
 	// defaultTime holds the default time to use when
 	// there is no time in a line-protocol data point,
 	// in nanoseconds since the Unix epoch.
 	defaultTime: int
+
 	// precision holds the precision to use when interpreting
 	// timestamps.
-	precision:   #Precision
+	precision: #Precision
 
 	// implementation shows which implementation this
 	// test input came from.
@@ -34,16 +41,20 @@ import (
 // EncodeInput specifies an input to the encoder.
 #EncodeInput: {
 	key: "\(hex.Encode(md5.Sum(json.Marshal({
-		"point":             point
-		"precision":         precision
+		"point":     point
+		"precision": precision
 	}))))"
 
 	// point specifies the point to encode.
-	point:             #Point
+	point: #Point
+
+	// about holds human-readable information about the
+	// test case.
+	about?: string
 
 	// precision specifies the precision of the timestamps to
 	// include in the result.
-	precision:         #Precision
+	precision: #Precision
 
 	// implementation shows which implementation this
 	// test input came from.

@@ -165,6 +165,7 @@ func (o1 *EncodeOutput) Equal(o2 *EncodeOutput) bool {
 type DecodeInput struct {
 	Key            string    `json:"key"`
 	Text           Bytes     `json:"text"`
+	About          string    `json:"about,omitempty"`
 	DefaultTime    int64     `json:"defaultTime"`
 	Precision      Precision `json:"precision"`
 	Implementation string    `json:"implementation,omitempty"`
@@ -173,6 +174,7 @@ type DecodeInput struct {
 type EncodeInput struct {
 	Key            string    `json:"key"`
 	Point          *Point    `json:"point"`
+	About          string    `json:"about,omitempty"`
 	Precision      Precision `json:"precision"`
 	Implementation string    `json:"implementation,omitempty"`
 }
