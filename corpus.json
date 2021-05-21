@@ -15296,6 +15296,19 @@
                 "error": "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
             }
         },
+        "2be024ca70163a7068b08f5e8ef57ffa": {
+            "input": {
+                "key": "2be024ca70163a7068b08f5e8ef57ffa",
+                "text": "\tm v=1",
+                "about": "tab indentation",
+                "defaultTime": 42000000000,
+                "precision": "1ns",
+                "implementation": "custom"
+            },
+            "output": {
+                "error": "cannot get metric 0: cannot get measurement: at line 1:1: invalid character '\\t' found at start of measurement name"
+            }
+        },
         "2bf9dcce760a7d697394a271f839137b": {
             "input": {
                 "key": "2bf9dcce760a7d697394a271f839137b",
@@ -28370,6 +28383,21 @@
                 "error": "cannot get metric 0: cannot get measurement: at line 1:1: invalid character '\\x00' found at start of measurement name"
             }
         },
+        "50917f6de7ce19a6f15354d48aee8d21": {
+            "input": {
+                "key": "50917f6de7ce19a6f15354d48aee8d21",
+                "text": {
+                    "binary": "bSBiYWT/PTE="
+                },
+                "about": "invalid utf-8 in field key",
+                "defaultTime": 42000000000,
+                "precision": "1ns",
+                "implementation": "custom"
+            },
+            "output": {
+                "error": "cannot get metric 0: cannot get field 0: at line 1:3: invalid utf-8 sequence in token \"bad\\xff\""
+            }
+        },
         "509640fc693f2f923337c2fd82129f17": {
             "input": {
                 "key": "509640fc693f2f923337c2fd82129f17",
@@ -35368,6 +35396,21 @@
             },
             "output": {
                 "error": "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+            }
+        },
+        "64c16c43d454d8dac6818c3d4e01d2b1": {
+            "input": {
+                "key": "64c16c43d454d8dac6818c3d4e01d2b1",
+                "text": {
+                    "binary": "bSxiYWT/PWZvbyB2PTE="
+                },
+                "about": "invalid utf-8 in tag key",
+                "defaultTime": 42000000000,
+                "precision": "1ns",
+                "implementation": "custom"
+            },
+            "output": {
+                "error": "cannot get metric 0: cannot get tag 0: at line 1:3: invalid utf-8 sequence in token \"bad\\xff\""
             }
         },
         "64c4f763e6feb973f1b9e974f2fb33b2": {
@@ -48873,6 +48916,19 @@
                 "error": "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
             }
         },
+        "89beba88441c3c5354ad08d01ed03d19": {
+            "input": {
+                "key": "89beba88441c3c5354ad08d01ed03d19",
+                "text": "m v=1",
+                "about": "invalid unicode white space",
+                "defaultTime": 42000000000,
+                "precision": "1ns",
+                "implementation": "custom"
+            },
+            "output": {
+                "error": "cannot get metric 0: cannot get tag 0: at line 1:7: empty tag name"
+            }
+        },
         "89cdde37a72a4ee59689e2bbb2f4cd2d": {
             "input": {
                 "key": "89cdde37a72a4ee59689e2bbb2f4cd2d",
@@ -58966,6 +59022,7 @@
             "input": {
                 "key": "a60564d9e42eefc1c0bf8027a80e8431",
                 "text": "cpu,something= value=42",
+                "about": "missing tag value",
                 "defaultTime": 42000000000,
                 "precision": "1ns",
                 "implementation": "custom"
@@ -64109,6 +64166,21 @@
             },
             "output": {
                 "error": "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+            }
+        },
+        "b5a8f4acd99818316ee5aff62f48736c": {
+            "input": {
+                "key": "b5a8f4acd99818316ee5aff62f48736c",
+                "text": {
+                    "binary": "bSxmb289YmFk/yB2PTE="
+                },
+                "about": "invalid utf-8 in tag value",
+                "defaultTime": 42000000000,
+                "precision": "1ns",
+                "implementation": "custom"
+            },
+            "output": {
+                "error": "cannot get metric 0: cannot get tag 0: at line 1:7: invalid utf-8 sequence in token \"bad\\xff\""
             }
         },
         "b5ab8bb73384a9f57ff4e251f62622d9": {
@@ -81006,6 +81078,21 @@
                 "error": "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
             }
         },
+        "e2c746c7bfdf0bb33d4057f12eb0b665": {
+            "input": {
+                "key": "e2c746c7bfdf0bb33d4057f12eb0b665",
+                "text": {
+                    "binary": "YmFk/yB2PTE="
+                },
+                "about": "invalid utf-8 in measurement",
+                "defaultTime": 42000000000,
+                "precision": "1ns",
+                "implementation": "custom"
+            },
+            "output": {
+                "error": "cannot get metric 0: cannot get measurement: at line 1:1: invalid utf-8 sequence in token \"bad\\xff\""
+            }
+        },
         "e2d1684a9518443bb349df65de797368": {
             "input": {
                 "key": "e2d1684a9518443bb349df65de797368",
@@ -84812,6 +84899,7 @@
             "input": {
                 "key": "edc76ef5cc330867490f7f7b27c72593",
                 "text": "cpu_load_short,host=server01,region=us-west",
+                "about": "no values",
                 "defaultTime": 42000000000,
                 "precision": "1ns",
                 "implementation": "custom"
@@ -87392,6 +87480,21 @@
             },
             "output": {
                 "error": "cannot get metric 0: cannot get tag 0: at line 1:2: expected '=' after tag key \"\", but got '\\v' instead"
+            }
+        },
+        "f3d59e84ee332a0adf44e86ecf087b59": {
+            "input": {
+                "key": "f3d59e84ee332a0adf44e86ecf087b59",
+                "text": {
+                    "binary": "bSBmPSJiYWT/Ig=="
+                },
+                "about": "invalid utf-8 in field value",
+                "defaultTime": 42000000000,
+                "precision": "1ns",
+                "implementation": "custom"
+            },
+            "output": {
+                "error": "cannot get metric 0: cannot get field 0: at line 1:6: invalid utf-8 sequence in token \"bad\\xff\""
             }
         },
         "f3e2dcab8a075f0e75f056e66e92659e": {
@@ -93498,6 +93601,7 @@
                         }
                     ]
                 },
+                "about": "empty tag value",
                 "precision": "1ns",
                 "implementation": "custom"
             },
