@@ -6,7 +6,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/influxdata/line-protocol/v2/influxdata"
+	"github.com/influxdata/line-protocol/v2/lineprotocol"
 
 	"github.com/influxdata/line-protocol-corpus/lpcorpus"
 )
@@ -14,7 +14,7 @@ import (
 type lineProtocolV2Decoder struct{}
 
 func (lineProtocolV2Decoder) Decode(input *lpcorpus.DecodeInput) ([]*lpcorpus.Point, error) {
-	dec := influxdata.NewDecoderWithBytes(input.Text)
+	dec := lineprotocol.NewDecoderWithBytes(input.Text)
 	ms := []*lpcorpus.Point{}
 	for dec.Next() {
 		m, err := tokenizeToCorpusPoint(dec, input.Precision, input.DefaultTime)
@@ -26,7 +26,7 @@ func (lineProtocolV2Decoder) Decode(input *lpcorpus.DecodeInput) ([]*lpcorpus.Po
 	return ms, nil
 }
 
-func tokenizeToCorpusPoint(dec *influxdata.Decoder, precision lpcorpus.Precision, defaultTime int64) (*lpcorpus.Point, error) {
+func tokenizeToCorpusPoint(dec *lineprotocol.Decoder, precision lpcorpus.Precision, defaultTime int64) (*lpcorpus.Point, error) {
 	var m lpcorpus.Point
 	var err error
 	m.Name, err = dec.Measurement()
@@ -51,7 +51,7 @@ func tokenizeToCorpusPoint(dec *influxdata.Decoder, precision lpcorpus.Precision
 	})
 	for i := range m.Tags {
 		if i > 0 && bytes.Equal(m.Tags[i-1].Key, m.Tags[i].Key) {
-			return nil, fmt.Errorf("duplicate key %q", m.Tags[i].Key)
+			return nil, fmt.Errorf("duplicate tag key %q", m.Tags[i].Key)
 		}
 	}
 	for {
@@ -83,7 +83,7 @@ func dupBytes(b []byte) []byte {
 type lineProtocolV2Encoder struct{}
 
 func (lineProtocolV2Encoder) Encode(input *lpcorpus.EncodeInput) ([]byte, error) {
-	var enc influxdata.Encoder
+	var enc lineprotocol.Encoder
 	enc.SetPrecision(influxdataPrecision(input.Precision))
 	p := input.Point
 	enc.StartLineRaw(p.Name)
@@ -95,7 +95,7 @@ func (lineProtocolV2Encoder) Encode(input *lpcorpus.EncodeInput) ([]byte, error)
 		enc.AddTagRaw(tag.Key, tag.Value)
 	}
 	for _, field := range p.Fields {
-		val, ok := influxdata.NewValue(field.Value.Interface())
+		val, ok := lineprotocol.NewValue(field.Value.Interface())
 		if !ok {
 			return nil, fmt.Errorf("invalid value %v", field.Value)
 		}
@@ -108,16 +108,16 @@ func (lineProtocolV2Encoder) Encode(input *lpcorpus.EncodeInput) ([]byte, error)
 	return enc.Bytes(), nil
 }
 
-func influxdataPrecision(p lpcorpus.Precision) influxdata.Precision {
+func influxdataPrecision(p lpcorpus.Precision) lineprotocol.Precision {
 	switch p.Duration {
 	case time.Nanosecond:
-		return influxdata.Nanosecond
+		return lineprotocol.Nanosecond
 	case time.Microsecond:
-		return influxdata.Microsecond
+		return lineprotocol.Microsecond
 	case time.Millisecond:
-		return influxdata.Millisecond
+		return lineprotocol.Millisecond
 	case time.Second:
-		return influxdata.Second
+		return lineprotocol.Second
 	default:
 		panic(fmt.Errorf("unknown precision in test corpus %v", p))
 	}

@@ -38,4 +38,28 @@ inputs: decode: custom: [{
 }, {
 	about: "tab indentation"
 	text:  "\tm v=1"
+}, {
+	about: "non-printable character in measurement",
+	text: "x\u0001y v=1",
+}, {
+	about: "non-printable character in tag key",
+	text: "m,x\u0001y=v v=1",
+}, {
+	about: "non-printable character in tag value",
+	text: "m,k=x\u0001y v=1",
+}, {
+	about: "non-printable character in field key",
+	text: "m x\u0001y=1",
+}, {
+	about: "non-printable character in field value",
+	text: "m v=\"x\u0001y\"",
+}, {
+	about: "backslash-n in string field",
+	text: "m v=\"\\n\"",
+}, {
+	about: "backslash-r in string field",
+	text: "m v=\"\\r\"",
+}, {
+	about: "backslash-t in string field",
+	text: "m v=\"\\t\"",
 }]
